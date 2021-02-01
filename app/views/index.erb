@@ -1,6 +1,4 @@
-<%Recipes.all do |recipe|%>
+<%@recipes.each do |recipe|%>
 <p><%=recipe.name%></p>
-<p><%=recipe.ingredients%></p>
-<p><%=recipe.cooktime%></p>
-<p><link href='recipes/<%=recipe.id%>'>Recipe Link</p>>
-<p><%end%></p
+<p><a href='/recipes/<%=recipe.id%>'>Recipe Link</a></p>
+<p><%end%></p>
